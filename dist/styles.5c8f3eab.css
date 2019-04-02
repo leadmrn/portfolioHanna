@@ -1,0 +1,348 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: "Secular";
+  src: url("Secular.d6ded02f.ttf"); }
+
+@font-face {
+  font-family: "Abril";
+  src: url("Abril.a208b58b.ttf"); }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+.header {
+  height: 50px;
+  display: flex;
+  align-items: center; }
+  @media (min-width: 1000px) {
+    .header {
+      justify-content: space-between; } }
+
+.header__logo {
+  font-size: 24px;
+  font-family: "Secular";
+  margin-left: 20px; }
+
+.header__about, .header__work {
+  display: none; }
+  @media (min-width: 1000px) {
+    .header__about, .header__work {
+      display: initial;
+      font-family: "Secular";
+      font-size: 18px;
+      margin-right: 20px; } }
+
+.home {
+  height: 100vh;
+  width: 100vw;
+  background-color: #FFEFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  @media (min-width: 1000px) {
+    .home {
+      background: url("paris.7a76fa81.png") no-repeat center fixed;
+      background-size: cover; } }
+
+.home__title {
+  font-size: 80px;
+  font-family: "Secular";
+  transform: rotate(180deg); }
+  .home__title a {
+    color: black; }
+    @media (min-width: 1000px) {
+      .home__title a {
+        color: #FFE3F9; } }
+  @media (min-width: 1000px) {
+    .home__title {
+      font-size: 120px; } }
+
+@media (min-width: 1000px) {
+  .content__mobile {
+    display: none; } }
+
+.content__projectMobile {
+  background: no-repeat center fixed;
+  background-size: cover;
+  width: 80%;
+  height: 500px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  @media (min-width: 700px) {
+    .content__projectMobile {
+      height: 750px; } }
+
+.content__projectMobile--nespresso {
+  background-image: url("projectNespresso-mobile.593118a0.jpg"); }
+
+.content__projectMobile--booking {
+  background-image: url("projectBooking-mobile.09d12247.jpg"); }
+
+.content__projectMobile--deoes {
+  background-image: url("projectDeoes-mobile.23eccfaf.jpg"); }
+
+.content__description {
+  font-size: 45px;
+  font-family: "Abril";
+  transform: translateX(-20px); }
+  @media (min-width: 700px) {
+    .content__description {
+      font-size: 60px; } }
+
+.content__project {
+  transform: translateY(100px);
+  text-align: center;
+  font-size: 30px;
+  font-family: "Secular"; }
+  @media (min-width: 700px) {
+    .content__project {
+      font-size: 45px;
+      transform: translateY(250px); } }
+
+.project__otherProjects {
+  width: 50%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  font-family: "Secular";
+  font-size: 18px; }
+
+.project__about {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px 0px #656565;
+  font-family: "Secular"; }
+
+.content__desktop {
+  display: none; }
+  @media (min-width: 1000px) {
+    .content__desktop {
+      display: flex;
+      justify-content: space-around;
+      align-content: center;
+      margin-top: 50px;
+      height: 600px; } }
+
+.content__projectDesktop {
+  margin-top: 50px;
+  display: flex; }
+
+.content__letterProject {
+  position: relative;
+  right: -70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 350px;
+  justify-content: space-between; }
+
+.content__letter {
+  height: 200px; }
+
+.lol {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.content__line {
+  width: 1px;
+  height: 500px;
+  background-color: #C4C4C4; }
+
+.content__round {
+  height: 25px;
+  width: 25px;
+  background-color: #d6d5d5;
+  border-radius: 50%; }
+
+.content__triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 10px 20px 10px;
+  border-color: transparent transparent #d6d5d5 transparent; }
+
+.content__triangle--down {
+  transform: rotate(180deg); }
+
+.content__arrowProject {
+  height: 20px; }
+
+.content__textProject {
+  font-family: 'Secular';
+  font-size: 22px; }
+
+.content__view {
+  display: flex;
+  position: relative;
+  right: 70px; }
+
+.content__viewProject {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center; }
+
+.content__arrow {
+  width: 100px;
+  margin-bottom: 10px; }
+
+.content__text {
+  font-family: 'Secular'; }
+
+.content__pic {
+  height: 450px;
+  margin-top: 20px; }
+
+.content__pic--1, .content__pic--3 {
+  margin-bottom: 90px; }
+
+.content__pic--2 {
+  margin: 0 10px; }
+
+.video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.videoProject {
+  display: flex;
+  width: 90vw;
+  margin: 50px auto;
+  box-shadow: 1px 1px 8px 1px #656565; }
+  @media (min-width: 1000px) {
+    .videoProject {
+      height: 60vh; } }
+
+.video__back {
+  font-size: 22px;
+  font-family: "Secular"; }
+
+.unvisible {
+  display: none; }
+
+.about__content {
+  padding: 0 20px; }
+  @media (min-width: 700px) {
+    .about__content {
+      width: 60%;
+      margin: 0 auto; } }
+
+.about__title {
+  display: flex;
+  font-size: 27px;
+  font-family: "Secular";
+  background: url("BGC.d2130eb6.jpg");
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  justify-content: flex-end;
+  margin: 50px 0; }
+  @media (min-width: 700px) {
+    .about__title {
+      font-size: 70px; } }
+
+.about__identity {
+  font-size: 24px;
+  font-family: "Helvetica";
+  font-weight: bold;
+  margin: 10px 0; }
+
+.about__identity--hi {
+  color: white;
+  text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px; }
+
+.about__subtitle {
+  font-size: 20px;
+  font-family: "Helvetica";
+  font-weight: lighter;
+  margin: 10px 0; }
+
+.about__description {
+  font-family: "Helvetica";
+  line-height: 20px;
+  margin: 20px 0 10px 0;
+  text-align: justify; }
+
+.about__description--2 {
+  text-align: center; }
+
+.about__descriptionEnd {
+  font-family: "Helvetica";
+  margin: 40px 0;
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  transition: color 0.5s, text-shadow 0.5s; }
+  .about__descriptionEnd:hover {
+    color: white;
+    text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px; }
+
+.about__socialMedias {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  font-family: "Secular";
+  font-weight: bold;
+  width: 80%; }
+
+.about__work {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+  font-family: "Secular"; }
+  @media (min-width: 1000px) {
+    .about__work {
+      display: none; } }

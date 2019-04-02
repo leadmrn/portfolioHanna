@@ -1,0 +1,213 @@
+
+.content__mobile{
+  @media(min-width: 1000px){
+    display: none;
+  }
+}
+
+.content__projectMobile{
+  background: no-repeat center fixed;
+  background-size: cover;
+  width: 80%;
+  height: 500px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media(min-width: 700px){
+    height: 750px;
+  }
+}
+
+.content__projectMobile--nespresso{
+  background-image: url('../assets/projectNespresso-mobile.jpg');
+}
+
+.content__projectMobile--booking{
+  background-image: url('../assets/projectBooking-mobile.jpg');
+}
+
+.content__projectMobile--deoes{
+  background-image: url('../assets/projectDeoes-mobile.jpg');
+}
+
+.content__description{
+  font-size: 45px;
+  font-family: "Abril";
+  transform: translateX(-20px);
+
+  @media(min-width: 700px){
+    font-size: 60px;
+  }
+}
+
+.content__project{
+  transform: translateY(100px);
+  text-align: center;
+  font-size: 30px;
+  font-family: "Secular";
+
+  @media(min-width: 700px){
+    font-size: 45px;
+    transform: translateY(250px);
+  }
+}
+
+.project__otherProjects{
+  width: 50%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  font-family: "Secular";
+  font-size: 18px;
+}
+
+
+.project__about{
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px 0px #656565;
+  font-family: "Secular";
+}
+
+
+.content__desktop{
+  display: none;
+
+  @media(min-width: 1000px){
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    margin-top: 50px;
+    height: 600px;
+  }
+}
+
+.content__projectDesktop{
+  margin-top: 50px;
+  display: flex;
+}
+
+.content__letterProject{
+  position: relative;
+  right: -70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 350px;
+  justify-content: space-between;
+}
+
+.content__letter{
+  height: 200px;
+}
+
+.lol{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content__line{
+  width: 1px;
+  height: 500px;
+  background-color: #C4C4C4;
+}
+
+.content__round{
+  height: 25px;
+  width: 25px;
+  background-color: #d6d5d5;
+  border-radius: 50%;
+}
+
+.content__triangle{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 10px 20px 10px;
+  border-color: transparent transparent #d6d5d5 transparent;
+}
+
+.content__triangle--down{
+  transform: rotate(180deg);
+}
+
+.content__arrowProject{
+  height: 20px;
+}
+
+.content__textProject{
+  font-family: 'Secular';
+  font-size: 22px;
+}
+
+.content__view{
+  display: flex;
+  position: relative;
+  right: 70px;
+}
+
+.content__viewProject{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.content__arrow{
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.content__text{
+  font-family: 'Secular';
+}
+
+.content__pic{
+  height: 450px;
+  margin-top: 20px;
+}
+
+.content__pic--1, .content__pic--3{
+  margin-bottom: 90px;
+}
+
+.content__pic--2{
+  margin: 0 10px;
+}
+
+.video{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.videoProject{
+  display: flex;
+  width: 90vw;
+  margin: 50px auto;
+  box-shadow: 1px 1px 8px 1px #656565;
+
+  @media(min-width: 1000px){
+    height: 60vh;
+  }
+}
+
+.video__back{
+  font-size: 22px;
+  font-family: "Secular";
+}
+
+.unvisible{
+  display: none;
+}
+

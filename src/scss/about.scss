@@ -1,0 +1,90 @@
+.about__content{
+  padding: 0 20px;
+
+  @media(min-width: 700px){
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
+.about__title{
+  display: flex;
+  font-size: 27px;
+  font-family: "Secular";
+  background: url('../assets/BGC.jpg');
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  justify-content: flex-end;
+  margin: 50px 0;
+
+
+  @media(min-width: 700px){
+    font-size: 70px;
+  }
+}
+
+.about__identity{
+  font-size: 24px;
+  font-family: "Helvetica";
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.about__identity--hi{
+  color: white;
+  text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+}
+
+.about__subtitle{
+  font-size: 20px;
+  font-family: "Helvetica";
+  font-weight: lighter;
+  margin: 10px 0;
+}
+
+.about__description{
+  font-family: "Helvetica";
+  line-height: 20px;
+  margin: 20px 0 10px 0;
+  text-align: justify;
+}
+
+.about__description--2{
+  text-align: center;
+}
+
+.about__descriptionEnd{
+  font-family: "Helvetica";
+  margin: 40px 0;
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  transition: color 0.5s, text-shadow 0.5s;
+
+  &:hover{
+    color: white;
+    text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+  }
+}
+
+.about__socialMedias{
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  font-family: "Secular";
+  font-weight: bold;
+  width: 80%;
+}
+
+.about__work{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+  font-family: "Secular";
+
+  @media(min-width: 1000px){
+    display: none;
+  }
+}
